@@ -205,7 +205,6 @@ document.getElementById('links').innerHTML = LINKS.map((l, i) => `
   <a class="clip${l.featured ? ' featured' : ''}" href="${esc(l.url)}" target="_blank" rel="noopener" style="--c:var(${l.color})">
     <span class="glyph${l.logo ? ' logo' : ''}">${l.logo ? LOGOS[l.logo] : (ICONS[l.icon] || ICONS.play)}</span>
     <span class="txt"><span class="name">${esc(l.name)}</span><span class="desc">${esc(l.desc)}</span></span>
-    <span class="tc">LAYER ${String(i + 1).padStart(2, '0')}</span>
   </a>`).join('');
 // 最新の動画(latest.json は GitHub が自動で更新する)
 fetch('latest.json', { cache: 'no-store' })
