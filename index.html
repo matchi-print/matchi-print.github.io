@@ -55,7 +55,7 @@ h1{font-family:var(--head);font-weight:900;font-size:28px;line-height:1.2;margin
   border-bottom:1px solid var(--line);padding-bottom:4px;font-variant-numeric:tabular-nums}
 .clip{--c:var(--c1);display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:14px;
   text-decoration:none;color:var(--fg);background:var(--surface);border-radius:8px;
-  border:1px solid var(--line);border-left:8px solid var(--c);padding:14px 16px 14px 14px;
+  border:1px solid var(--line);padding:14px 16px;
   position:relative;overflow:hidden;transition:transform .15s ease, box-shadow .15s ease}
 .clip:hover{transform:translateX(4px);box-shadow:-4px 4px 0 var(--c)}
 .clip:focus-visible{outline:3px solid var(--c);outline-offset:3px}
@@ -68,8 +68,6 @@ h1{font-family:var(--head);font-weight:900;font-size:28px;line-height:1.2;margin
 .desc{font-size:13px;color:var(--muted);overflow-wrap:anywhere}
 .tc{font-family:var(--mono);font-size:11px;color:var(--muted);font-variant-numeric:tabular-nums}
 
-.featured{background:var(--fg);color:var(--bg);border-color:var(--fg)}
-.featured .desc,.featured .tc{color:var(--bg);opacity:.75}
 
 /* 最新の動画 */
 .latest{display:flex;flex-direction:column;gap:10px;text-decoration:none;color:var(--fg);background:var(--surface);
@@ -159,7 +157,7 @@ const PROFILE = {
   tags: []
 };
 const LINKS = [
-  { name:"YouTube", desc:"動画はこっち", url:"https://www.youtube.com/@まっちmatchi_print", color:"--c1", logo:"youtube", featured:true },
+  { name:"YouTube", desc:"動画はこっち", url:"https://www.youtube.com/@まっちmatchi_print", color:"--c1", logo:"youtube" },
   { name:"TikTok",  desc:"ショート動画を投稿中", url:"https://www.tiktok.com/@lil_sushi_land",      color:"--c2", logo:"tiktok" },
   { name:"Instagram", desc:"日常をゆるく載せてるぞ！", url:"https://www.instagram.com/matchi_print/?hl=ja", color:"--c3", logo:"instagram" },
   { name:"X",       desc:"更新のお知らせ・つぶやき", url:"https://x.com/matchi_print",            color:"--c4", logo:"x" },
